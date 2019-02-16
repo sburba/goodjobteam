@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "name": "goodjobteam",
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@now/html-minifier"
+    },
+    {
+      "src": "style.css",
+      "use": "@now/static"
+    },
+    {
+      "src": "confetti.js",
+      "use": "@now/static"
+    },
+    {
+      "src": "motivational_sentence.js",
+      "use": "@now/static"
+    }
+  ]
+}

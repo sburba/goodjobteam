@@ -1,0 +1,24 @@
+body {
+    height: 100%;
+    background: #2a3340;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+}
+
+#motivational-sentence {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#confetti-canvas {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+}
