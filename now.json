@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "goodjobteam",
+  "alias": ["gooodjob.team"],
   "builds": [
     {
       "src": "index.html",
