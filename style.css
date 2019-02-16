@@ -3,7 +3,7 @@ body {
     background: #2a3340;
 }
 
-.container {
+#container {
     position: relative;
     height: 100%;
 }
