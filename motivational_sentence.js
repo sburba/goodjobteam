@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		'crew',
 		'gang',
 		'clan',
-		'troop',
 		'assemblage',
 		'possy',
 		'troupe',
