@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		'Extraordinary',
 		'Great',
 		'Marvelous',
-		'Positive',
 		'Satisfying',
 		'Superb',
 		'Mind-blowing'
