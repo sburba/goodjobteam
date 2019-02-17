@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		'performance',
 		'task',
 		'undertaking',
+		'enterprise',
 	];
 	const teamSynonyms = [
 		'team',
