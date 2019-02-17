@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		'assemblage',
 		'possy',
 		'troupe',
+		'corps',
 	];
 
 	function choose(wordList) {
