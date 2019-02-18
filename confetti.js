@@ -1,12 +1,12 @@
 /**
- * This is a straight copy of https://codepen.io/jonathanbell/pen/OvYVYw
+ * This is a straight copy of https://codepen.io/jonathanbell/pen/OvYVYw with a few style fixes
  */
 document.addEventListener('DOMContentLoaded', () => {
 	let W = window.innerWidth;
 	let H = window.innerHeight;
 	const canvas = document.getElementById("confetti-canvas");
 	const context = canvas.getContext("2d");
-	const maxConfettis = 150;
+	const maxConfetti = 150;
 	const particles = [];
 
 	const possibleColors = [
@@ -29,16 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		return Math.floor(Math.random() * (to - from + 1) + from);
 	}
 
-	function confettiParticle() {
+	function ConfettiParticle() {
 		this.x = Math.random() * W; // x
 		this.y = Math.random() * H - H; // y
 		this.r = randomFromTo(11, 33); // radius
-		this.d = Math.random() * maxConfettis + 11;
-		this.color =
-			possibleColors[Math.floor(Math.random() * possibleColors.length)];
+		this.d = Math.random() * maxConfetti + 11;
+		this.color = possibleColors[Math.floor(Math.random() * possibleColors.length)];
 		this.tilt = Math.floor(Math.random() * 33) - 11;
 		this.tiltAngleIncremental = Math.random() * 0.07 + 0.05;
-		this.tiltAngle = 0;
 
 		this.draw = function () {
 			context.beginPath();
@@ -50,21 +48,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		};
 	}
 
-	function Draw() {
+	function draw() {
 		const results = [];
 
 		// Magical recursive functional love
-		requestAnimationFrame(Draw);
+		requestAnimationFrame(draw);
 
 		context.clearRect(0, 0, W, window.innerHeight);
 
-		for (var i = 0; i < maxConfettis; i++) {
+		for (let i = 0; i < maxConfetti; i++) {
 			results.push(particles[i].draw());
 		}
 
 		let particle = {};
 		let remainingFlakes = 0;
-		for (var i = 0; i < maxConfettis; i++) {
+		for (let i = 0; i < maxConfetti; i++) {
 			particle = particles[i];
 
 			particle.tiltAngle += particle.tiltAngleIncremental;
@@ -97,12 +95,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	);
 
 	// Push new confetti objects to `particles[]`
-	for (var i = 0; i < maxConfettis; i++) {
-		particles.push(new confettiParticle());
+	for (let i = 0; i < maxConfetti; i++) {
+		particles.push(new ConfettiParticle());
 	}
 
 	// Initialize
 	canvas.width = W;
 	canvas.height = H;
-	Draw();
+	draw();
 });
