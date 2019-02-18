@@ -8,15 +8,11 @@
       "use": "@now/static"
     },
     {
-      "src": "style.css",
+      "src": "*.js",
       "use": "@now/static"
     },
     {
-      "src": "confetti.js",
-      "use": "@now/static"
-    },
-    {
-      "src": "motivational_sentence.js",
+      "src": "favicon.png",
       "use": "@now/static"
     }
   ]
