@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		'possy',
 		'troupe',
 		'corps',
-		'buddies',
 		'amigos',
 	];
 
