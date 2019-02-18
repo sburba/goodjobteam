@@ -4,13 +4,41 @@
 	<title>Good Job Team!</title>
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<meta name="description" content="The congratulations we rightly deserve">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+	<style>
+		body {
+			height: 100%;
+			background: #2a3340;
+		}
+
+		#container {
+			position: relative;
+			height: 100%;
+		}
+
+		#motivational-sentence {
+			font-size: 3em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+		}
+
+		#confetti-canvas {
+			overflow-y: hidden;
+			overflow-x: hidden;
+			width: 100%;
+			margin: 0;
+		}
+	</style>
 	<script src="motivational_sentence.js" defer></script>
 	<script src="confetti.js" defer></script>
 </head>
 <body>
 <div id="container">
-    <h1 id="motivational-sentence"><noscript>Good Job Team!</noscript></h1>
+	<h1 id="motivational-sentence">
+		<noscript>Good Job Team!</noscript>
+	</h1>
 	<canvas id="confetti-canvas"></canvas>
 </div>
 </body>
