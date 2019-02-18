@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		this.color = possibleColors[Math.floor(Math.random() * possibleColors.length)];
 		this.tilt = Math.floor(Math.random() * 33) - 11;
 		this.tiltAngleIncremental = Math.random() * 0.07 + 0.05;
+		this.tiltAngle = 0;
 
 		this.draw = function () {
 			context.beginPath();
