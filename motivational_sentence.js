@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		'Superb',
 		'Mind-blowing',
 		'Wonderous',
+		'Stupendous',
 	];
 	const workSynonyms = [
 		'job',
