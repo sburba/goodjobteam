@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		'gang',
 		'clan',
 		'assemblage',
-		'possy',
+		'posse',
 		'troupe',
 		'amigos',
 	];
