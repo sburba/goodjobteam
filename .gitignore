@@ -1,1 +1,5 @@
+.cache
 .idea
+.vscode
+dist
+node_modules

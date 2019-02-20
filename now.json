@@ -4,16 +4,12 @@
   "alias": ["gooodjob.team"],
   "builds": [
     {
-      "src": "index.html",
-      "use": "@now/static"
-    },
-    {
-      "src": "*.js",
-      "use": "@now/static"
-    },
-    {
-      "src": "favicon.png",
+      "src": "dist/*",
       "use": "@now/static"
     }
+  ],
+  "routes": [
+    { "src": "/", "dest": "dist/index.html" },
+    { "src": "/(.*)", "dest": "dist/$1" }
   ]
 }
