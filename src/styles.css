@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Lilita+One");
+
 body {
   background: #2a3340;
   border: 0;
   margin: 0;
+  font-family: "Lilita One", sans-serif;
 }
 
 #container {
@@ -9,11 +12,14 @@ body {
 }
 
 #motivational-sentence {
-  font-size: 3em;
+  font-size: 5em;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
   color: white;
 }
 
@@ -25,10 +31,10 @@ body {
 }
 
 #about {
-  position: absolute;
-  font-weight: bold;
+  position: fixed;
   bottom: 0;
   right: 0;
   color: white;
-  margin: 5px;
+  font-size: 1rem;
+  margin: 1em;
 }
