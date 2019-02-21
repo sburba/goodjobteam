@@ -1,3 +1,3 @@
 import "./styles.css";
-import "./confetti";
-import "./motivational_sentence";
+import "./confetti.js";
+import "./motivational_sentence.js";
