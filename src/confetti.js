@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (particle.y <= H) remainingFlakes++;
 
       // If a confetti has fluttered out of view,
-      // bring it back to above the viewport and let if re-fall.
+      // bring it back to above the viewport and let it re-fall.
       if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
         particle.x = Math.random() * W;
         particle.y = -30;
