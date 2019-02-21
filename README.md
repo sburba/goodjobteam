@@ -1,6 +1,6 @@
-# Good job, team!
+# Good Job, Team!
 
-The congratulations we rightly deserve
+The congratulations we rightly deserve.
 
 [gooodjob.team](https://gooodjob.team)
 
@@ -15,6 +15,7 @@ The congratulations we rightly deserve
 
 ```bash
 > yarn
+> rm -r dist/*
 > yarn run build
 ```
 
