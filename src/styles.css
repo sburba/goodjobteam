@@ -12,14 +12,15 @@ body {
 }
 
 #motivational-sentence {
-  font-size: 5em;
-  position: absolute;
   margin: 0;
-  padding: 0;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-30%);
+  font-size: 7vw;
   width: 100vw;
-  height: 100vh;
-  line-height: 100vh;
   text-align: center;
+  font-weight: normal;
+  text-shadow: 0 1px 0.25ex rgba(0, 0, 0, 0.3);
   color: white;
 }
 
