@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "now-build": "yarn run build"
   },
   "license": "MIT",
   "dependencies": {

@@ -19,6 +19,12 @@ The congratulations we rightly deserve.
 > yarn run build
 ```
 
+## Building for Release with ZEIT Now
+
+```bash
+> now
+```
+
 ## Licenses
 
 - favicon.png - Licensed under Creative Commons with attribution, see details [here](https://commons.wikimedia.org/wiki/File:Emojione_1F389.svg#Licensing)
