@@ -1,4 +1,6 @@
 .cache
+.editorconfig
+.gitignore
 .idea
 .vscode
 dist

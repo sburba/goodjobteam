@@ -1,0 +1,16 @@
+{
+  "name": "goodjobteam",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "now-build": "yarn run build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
+}

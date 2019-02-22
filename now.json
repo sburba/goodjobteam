@@ -4,16 +4,8 @@
   "alias": ["gooodjob.team"],
   "builds": [
     {
-      "src": "index.html",
-      "use": "@now/static"
-    },
-    {
-      "src": "*.js",
-      "use": "@now/static"
-    },
-    {
-      "src": "favicon.png",
-      "use": "@now/static"
+      "src": "package.json",
+      "use": "@now/static-build"
     }
   ]
 }

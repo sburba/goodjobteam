@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Lilita+One");
+
+body {
+  background: #2a3340;
+  border: 0;
+  margin: 0;
+  font-family: "Lilita One", sans-serif;
+}
+
+#container {
+  display: flex;
+}
+
+#motivational-sentence {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-30%);
+  font-size: 7vw;
+  width: 100vw;
+  text-align: center;
+  font-weight: normal;
+  text-shadow: 0 1px 0.25ex rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#confetti-canvas {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+}
+
+#about {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: white;
+  font-size: 1rem;
+  margin: 1em;
+}
