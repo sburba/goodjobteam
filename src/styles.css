@@ -24,6 +24,12 @@ body {
   color: white;
 }
 
+#yoshiba {
+  position: absolute;
+  height: 100%;
+  visibility: hidden;
+}
+
 #confetti-canvas {
   overflow-y: hidden;
   overflow-x: hidden;
