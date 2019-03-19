@@ -1,6 +1,5 @@
 export default [
   "attempt",
-  "commission",
   "effort",
   "endeavor",
   "enterprise",
@@ -13,9 +12,7 @@ export default [
   "production",
   "project",
   "pursuit",
-  "stab",
   "stint",
-  "task",
   "travail",
   "trial",
   "venture",
