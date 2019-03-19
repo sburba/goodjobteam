@@ -20,5 +20,5 @@ export default [
   "troop",
   "troupe",
   "unit",
-  "workers",
+  "workers"
 ];
