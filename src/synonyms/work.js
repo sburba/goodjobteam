@@ -12,7 +12,6 @@ export default [
   "production",
   "project",
   "pursuit",
-  "stint",
   "travail",
   "trial",
   "venture",
