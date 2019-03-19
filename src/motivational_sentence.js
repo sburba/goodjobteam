@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const motivationalSentence = `${capitalizeFirstLetter(
     choose(goodSynonyms)
-  )} ${choose(workSynonyms)}, ${capitalizeFirstLetter(choose(teamSynonyms))}!`;
+  )} ${choose(workSynonyms)}, ${choose(teamSynonyms)}!`;
   document.getElementById(
     "motivational-sentence"
   ).textContent = motivationalSentence;
