@@ -1,7 +1,6 @@
 export default [
   "assemblage",
   "band",
-  "bunch",
   "clan",
   "class",
   "club",
@@ -16,13 +15,10 @@ export default [
   "partners",
   "party",
   "posse",
-  "span",
   "squad",
-  "stable",
   "team",
   "troop",
   "troupe",
   "unit",
-  "workers",
-  "yoke"
+  "workers"
 ];
