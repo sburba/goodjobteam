@@ -1,4 +1,5 @@
 // https://stackoverflow.com/questions/31626852/how-to-add-konami-code-in-a-website-based-on-html
+// With a few alterations to align with style guide, remove deprecated api usage
 
 // the 'official' Konami Code sequence
 const konamiCode = [
