@@ -39,7 +39,6 @@ export default [
   "superior",
   "tip-top",
   "valuable",
-  "welcome",
   "wonderful",
   "wonderous",
   "worthy"
