@@ -4,12 +4,15 @@ export default [
   "clan",
   "class",
   "club",
+  "collective",
   "company",
   "comrades",
   "contingent",
   "crew",
   "crowd",
+  "everyone",
   "faction",
+  "folks",
   "gang",
   "outfit",
   "partners",
@@ -20,5 +23,6 @@ export default [
   "troop",
   "troupe",
   "unit",
-  "workers"
+  "workers",
+  "y’all"
 ];
