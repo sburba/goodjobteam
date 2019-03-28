@@ -9,19 +9,71 @@ body {
 
 #container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 #motivational-sentence {
   margin: 0;
   position: absolute;
-  top: 40%;
-  transform: translateY(-30%);
-  font-size: 7vw;
-  width: 100vw;
-  text-align: center;
+  width: 80vw;
   font-weight: normal;
+  text-align: center;
   text-shadow: 0 1px 0.25ex rgba(0, 0, 0, 0.3);
   color: white;
+  font-size: calc(20px + 1vw);
+  line-height: calc(1.7em + 0.5vw);
+}
+
+#sentence-icon {
+  height: 7em;
+  background: url(../static/party-icon.svg) no-repeat center top;
+  background-size: auto 100%;
+  -webkit-animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#motivational-sentence h1 {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font-size: 3em;
+  line-height: 1.1em;
+  -webkit-animation: fade-in 1.3s linear both;
+  animation: fade-in 1.3s linear both;
+}
+
+@-webkit-keyframes  scale-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #yoshiba {
@@ -44,4 +96,9 @@ body {
   color: white;
   font-size: 1rem;
   margin: 1em;
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
 }
