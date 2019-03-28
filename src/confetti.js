@@ -2,7 +2,7 @@
  * This is a straight copy of https://codepen.io/jonathanbell/pen/OvYVYw with a
  * few style fixes
  */
-document.addEventListener("DOMContentLoaded", () => {
+export function throwConfetti() {
   let W = window.innerWidth;
   let H = window.innerHeight;
   const canvas = document.getElementById("confetti-canvas");
@@ -105,5 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize
   canvas.width = W;
   canvas.height = H;
-  draw();
-});
+  setTimeout(() => {
+    draw();
+  }, 1000);
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>html{visibility: hidden;opacity:0;}</style>
     <title>Good Job Team!</title>
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta name="description" content="The congratulations we rightly deserve" />
@@ -9,9 +10,15 @@
   </head>
   <body>
     <div id="container">
-      <h1 id="motivational-sentence">
-        <noscript>Good Job Team!</noscript>
-      </h1>
+      <div id="motivational-sentence">
+        <div id="sentence-icon"></div>
+        <h1 id="sentence-top" class="tracking-in">
+          <noscript>Good Job,</noscript>
+        </h1>
+        <h1 id="sentence-bottom" class="tracking-in">
+          <noscript>Team!</noscript>
+        </h1>
+      </div>
       <img src="./static/yoshiba.png" id="yoshiba" />
       <canvas id="confetti-canvas"></canvas>
     </div>
