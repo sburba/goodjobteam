@@ -2,16 +2,16 @@ import goodSynonyms from "./synonyms/good.js";
 import teamSynonyms from "./synonyms/team.js";
 import workSynonyms from "./synonyms/work.js";
 
-function displayConfetti(){
-  import("./confetti.js").then((module) => {
-    module.throwConfetti()
-    activateKonami()
+function displayConfetti() {
+  import("./confetti.js").then(module => {
+    module.throwConfetti();
+    activateKonami();
   });
 }
 
-function activateKonami(){
-  import("./konami.js").then((module) => {
-    module.konami()
+function activateKonami() {
+  import("./konami.js").then(module => {
+    module.konami();
   });
 }
 
@@ -27,16 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const motivationalSentenceTop = `${capitalizeFirstLetter(
     choose(goodSynonyms)
   )} ${choose(workSynonyms)}, `;
-  
-  document.getElementById(
-    "sentence-top"
-  ).textContent = motivationalSentenceTop;
-  
+
+  document.getElementById("sentence-top").textContent = motivationalSentenceTop;
+
   const motivationalSentenceBottom = `${choose(teamSynonyms)}!`;
   document.getElementById(
     "sentence-bottom"
   ).textContent = motivationalSentenceBottom;
 
-  document.title = motivationalSentenceTop+motivationalSentenceBottom;
-  displayConfetti()
+  document.title = motivationalSentenceTop + motivationalSentenceBottom;
+  displayConfetti();
 });
