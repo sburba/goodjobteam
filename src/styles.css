@@ -30,9 +30,14 @@ body {
   height: 7em;
   background: url(../static/party-icon.svg) no-repeat center top;
   background-size: auto 100%;
-  -webkit-animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: scale-in 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
+#sentence-icon.konami {
+  background: url(../static/yoshiba.png) no-repeat center top;
+  background-size: auto 100%;
+}
+
 #motivational-sentence h1 {
   margin-top: 0.1em;
   margin-bottom: 0.1em;
@@ -42,7 +47,7 @@ body {
   animation: fade-in 1.3s linear both;
 }
 
-@-webkit-keyframes  scale-in {
+@-webkit-keyframes scale-in {
   0% {
     transform: scale(0);
   }
