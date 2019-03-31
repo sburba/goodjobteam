@@ -1,7 +1,7 @@
 // https://stackoverflow.com/questions/31626852/how-to-add-konami-code-in-a-website-based-on-html
 // With a few alterations to align with style guide, remove deprecated api usage
 
-export function konami() {
+export function konami(onKonamiEntered) {
   // the 'official' Konami Code sequence
   const konamiCode = [
     "ArrowUp",
@@ -31,15 +31,11 @@ export function konami() {
 
       // if the last key is reached, activate cheats
       if (konamiCodePosition === konamiCode.length) {
-        activateCheats();
+        onKonamiEntered();
         konamiCodePosition = 0;
       }
     } else {
       konamiCodePosition = 0;
     }
   });
-
-  function activateCheats() {
-    document.querySelector("#yoshiba").style.visibility = "visible";
-  }
 }

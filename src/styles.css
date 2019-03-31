@@ -30,8 +30,12 @@ body {
   height: 7em;
   background: url(../static/party-icon.svg) no-repeat center top;
   background-size: auto 100%;
-  -webkit-animation: scale-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#sentence-icon.konami {
+  background: url(../static/yoshiba.png) no-repeat center top;
+  background-size: auto 100%;
 }
 
 #motivational-sentence h1 {
