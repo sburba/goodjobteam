@@ -27,4 +27,4 @@ jobs:
             - ~/.cache
 
       # run tests!
-      - run: yarn test-once
+      - run: yarn ci

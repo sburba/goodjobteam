@@ -7,8 +7,8 @@
     "build": "parcel build index.html",
     "only-test": "cypress open",
     "test": "start-server-and-test only-start http://localhost:1234 only-test",
-    "only-test-once": "cypress run --record",
-    "test-once":  "start-server-and-test only-start http://localhost:1234 only-test-once",
+    "ci-test": "cypress run --record",
+    "ci":  "start-server-and-test only-start http://localhost:1234 ci-test",
     "now-build": "yarn run build"
   },
   "license": "MIT",
