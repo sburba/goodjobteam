@@ -3,14 +3,24 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html --open",
+    "only-start": "parcel index.html",
     "build": "parcel build index.html",
+    "only-test": "cypress open",
+    "test": "start-server-and-test only-start http://localhost:1234 only-test",
+    "ci-test": "cypress run --record",
+    "ci":  "start-server-and-test only-start http://localhost:1234 ci-test",
     "now-build": "yarn run build"
   },
   "license": "MIT",
   "dependencies": {
     "parcel-bundler": "^1.6.1"
   },
+  "browserslist": [
+    "since 2017-06"
+  ],
   "devDependencies": {
+    "start-server-and-test": "^1.7.12",
+    "cypress": "^3.2.0",
     "prettier": "^1.16.4"
   }
 }

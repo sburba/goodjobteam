@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cypress/base:10
+        environment:
+          TERM: xterm
+    working_directory: ~/app
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            # fallback to using the latest cache from branch
+            - v1-deps-{{ .Branch }}-
+            # And finally just latest cache
+            - v1-deps-
+
+      - run: yarn install
+
+      - save_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+            - ~/.npm
+            - ~/.cache
+
+      # run tests!
+      - run: yarn ci

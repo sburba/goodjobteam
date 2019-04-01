@@ -7,6 +7,7 @@ export function throwConfetti() {
   let H = window.innerHeight;
   const canvas = document.getElementById("confetti-canvas");
   const context = canvas.getContext("2d");
+  const yoshiba = document.getElementById("yoshiba");
   const maxConfetti = 150;
   const particles = [];
 
@@ -42,12 +43,16 @@ export function throwConfetti() {
     this.tiltAngle = 0;
 
     this.draw = function() {
-      context.beginPath();
-      context.lineWidth = this.r / 2;
-      context.strokeStyle = this.color;
-      context.moveTo(this.x + this.tilt + this.r / 3, this.y);
-      context.lineTo(this.x + this.tilt, this.y + this.tilt + this.r / 5);
-      return context.stroke();
+      if (window.konamiActivated) {
+        context.drawImage(yoshiba, this.x, this.y, 64, 64);
+      } else {
+        context.beginPath();
+        context.lineWidth = this.r / 2;
+        context.strokeStyle = this.color;
+        context.moveTo(this.x + this.tilt + this.r / 3, this.y);
+        context.lineTo(this.x + this.tilt, this.y + this.tilt + this.r / 5);
+        return context.stroke();
+      }
     };
   }
 
@@ -78,7 +83,7 @@ export function throwConfetti() {
       // bring it back to above the viewport and let it re-fall.
       if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
         particle.x = Math.random() * W;
-        particle.y = -30;
+        particle.y = -80;
         particle.tilt = Math.floor(Math.random() * 10) - 20;
       }
     }
