@@ -83,7 +83,7 @@ body {
 
 #yoshiba {
   position: absolute;
-  height: 100%;
+  height: 0;
   visibility: hidden;
 }
 
