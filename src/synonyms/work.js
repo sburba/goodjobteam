@@ -1,10 +1,15 @@
 export default [
-  "attempt",
+  "accomplishment",
+  "achievement",
+  "completion",
+  "creation",
   "effort",
   "endeavor",
   "enterprise",
   "exploit",
   "feat",
+  "grind",
+  "handiwork",
   "job",
   "muscle",
   "operation",
@@ -15,7 +20,8 @@ export default [
   "pursuit",
   "travail",
   "trial",
-  "try",
+  "triumph",
+  "undertaking",
   "venture",
   "work"
 ];
