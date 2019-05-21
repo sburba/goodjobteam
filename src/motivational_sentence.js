@@ -1,6 +1,7 @@
 import goodSynonyms from "./synonyms/good.js";
 import teamSynonyms from "./synonyms/team.js";
 import workSynonyms from "./synonyms/work.js";
+import randomFactory from "./random.js";
 
 async function displayConfetti() {
   const module = await import("./confetti.js");
@@ -12,8 +13,8 @@ async function listenForKonamiCode() {
   module.konami(activateYoshiMode);
 }
 
-function choose(wordList) {
-  return wordList[Math.floor(Math.random() * wordList.length)];
+function chooseWith(random, wordList) {
+  return wordList[Math.floor(random() * wordList.length)];
 }
 
 function capitalizeFirstLetter(word) {
@@ -22,7 +23,7 @@ function capitalizeFirstLetter(word) {
 
 function isAprilFirst() {
   const now = new Date();
-  return now.getMonth() === 3 && now.getDate() === 1
+  return now.getMonth() === 3 && now.getDate() === 1;
 }
 
 function activateYoshiMode() {
@@ -34,6 +35,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (isAprilFirst()) {
     activateYoshiMode();
   }
+
+  const today = new Date();
+  const random = randomFactory(
+    `${today.getFullYear()}${today.getMonth()}${today.getDate()}`
+  );
+  const choose = chooseWith.bind(undefined, random);
 
   const motivationalSentenceTop = `${capitalizeFirstLetter(
     choose(goodSynonyms)
