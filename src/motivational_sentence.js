@@ -1,6 +1,6 @@
 import goodSynonyms from "./synonyms/good.js";
+import workSynonyms from "./synonyms/job.js";
 import teamSynonyms from "./synonyms/team.js";
-import workSynonyms from "./synonyms/work.js";
 import randomFactory from "./random.js";
 
 async function displayConfetti() {
