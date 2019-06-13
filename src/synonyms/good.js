@@ -12,7 +12,6 @@ export default [
   "excellent",
   "exceptional",
   "extraordinary",
-  "fair",
   "favorable",
   "first-class",
   "first-rate",
