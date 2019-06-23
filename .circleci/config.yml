@@ -26,5 +26,6 @@ jobs:
             - ~/.npm
             - ~/.cache
 
+      - run: yarn checkstyle
       # run tests!
       - run: yarn ci

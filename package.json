@@ -5,10 +5,12 @@
     "start": "parcel index.html --open",
     "only-start": "parcel index.html",
     "build": "parcel build index.html",
+    "format": "prettier --write src/**/*.js index.html",
     "only-test": "cypress open",
     "test": "start-server-and-test only-start http://localhost:1234 only-test",
     "ci-test": "cypress run --record",
     "ci":  "start-server-and-test only-start http://localhost:1234 ci-test",
+    "checkstyle": "prettier --check src/**/*.js index.html",
     "now-build": "yarn run build"
   },
   "license": "MIT",
