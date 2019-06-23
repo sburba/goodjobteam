@@ -55,6 +55,7 @@ body {
     transform: scale(1);
   }
 }
+
 @keyframes scale-in {
   0% {
     transform: scale(0);
@@ -72,6 +73,7 @@ body {
     opacity: 1;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -95,12 +97,31 @@ body {
 }
 
 #about {
+  color: white;
+}
+
+#link-list {
+  margin: 1em 0.5em;
   position: fixed;
   bottom: 0;
   right: 0;
-  color: white;
   font-size: 1rem;
-  margin: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+#link-list > * {
+  margin: 0 0.5em;
+}
+
+#new-sentence {
+  background: none;
+  color: white;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 html {
