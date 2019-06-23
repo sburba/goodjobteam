@@ -31,6 +31,17 @@ function activateYoshiMode() {
   window.konamiActivated = true;
 }
 
+function showNewSentenceWith(random) {
+  const choose = chooseWith.bind(undefined, random);
+
+  const sentenceTop = `${capitalizeFirstLetter(choose(goodSynonyms))} ${choose(workSynonyms)}, `;
+  const sentenceBottom = `${choose(teamSynonyms)}!`;
+
+  document.title = sentenceTop + sentenceBottom;
+  document.getElementById("sentence-top").textContent = sentenceTop;
+  document.getElementById("sentence-bottom").textContent = sentenceBottom;
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   if (isAprilFirst()) {
     activateYoshiMode();
@@ -40,20 +51,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   const random = randomFactory(
     `${today.getFullYear()}${today.getMonth()}${today.getDate()}`
   );
-  const choose = chooseWith.bind(undefined, random);
 
-  const motivationalSentenceTop = `${capitalizeFirstLetter(
-    choose(goodSynonyms)
-  )} ${choose(workSynonyms)}, `;
+  showNewSentenceWith(random);
 
-  document.getElementById("sentence-top").textContent = motivationalSentenceTop;
-
-  const motivationalSentenceBottom = `${choose(teamSynonyms)}!`;
-  document.getElementById(
-    "sentence-bottom"
-  ).textContent = motivationalSentenceBottom;
-
-  document.title = motivationalSentenceTop + motivationalSentenceBottom;
+  document.getElementById("new-sentence").onclick = () => {
+    showNewSentenceWith(Math.random);
+  };
 
   await displayConfetti();
   await listenForKonamiCode();
