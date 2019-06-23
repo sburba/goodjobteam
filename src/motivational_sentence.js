@@ -34,7 +34,9 @@ function activateYoshiMode() {
 function showNewSentenceWith(random) {
   const choose = chooseWith.bind(undefined, random);
 
-  const sentenceTop = `${capitalizeFirstLetter(choose(goodSynonyms))} ${choose(workSynonyms)}, `;
+  const sentenceTop = `${capitalizeFirstLetter(choose(goodSynonyms))} ${choose(
+    workSynonyms
+  )}, `;
   const sentenceBottom = `${choose(teamSynonyms)}!`;
 
   document.title = sentenceTop + sentenceBottom;

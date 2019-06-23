@@ -1,13 +1,11 @@
 context("Actions", () => {
-  beforeEach(() => {
-    cy.visit("/");
-  });
-
   it('Should pick a sentence', () => {
+    cy.visit("/");
     cy.get("#container").contains(/\w+ \w+,.+\w+!/ms);
   });
 
   it('Gives a new sentence when "another?" is clicked', () => {
+    cy.visit("/");
     cy.get('#container').then(($container) => {
       const firstSentence = $container.text();
       expect(firstSentence).to.match(/\w+ \w+,.+\w+!/ms);
@@ -23,14 +21,11 @@ context("Actions", () => {
     })
   });
 
-  it("Turns to dogs when the konami code is entered", () => {
-    const now = new Date();
-    // On April first, konami will be there right away
-    // This is bad, I know
-    //TODO Real test that mocks out current date
-    if (now.getMonth() !== 3 || now.getDate() !== 1) {
-      cy.get("#sentence-icon").should("not.have.class", "konami");
-    }
+  it("Turns to dogs when the Konami code is entered", () => {
+    cy.clock();
+    cy.visit("/");
+
+    cy.get("#sentence-icon").should("not.have.class", "konami");
 
     cy.press([
       "ArrowUp",
@@ -44,6 +39,13 @@ context("Actions", () => {
       "b",
       "a"
     ]);
+
+    cy.get("#sentence-icon").should("have.class", "konami");
+  });
+
+  it("Is always in Konami mode on april first", () => {
+    cy.clock(new Date('April 1, 1970 00:00:00').getTime());
+    cy.visit("/");
 
     cy.get("#sentence-icon").should("have.class", "konami");
   });
