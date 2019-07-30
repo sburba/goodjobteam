@@ -5,6 +5,7 @@ export default [
   "class",
   "club",
   "collective",
+  "consortium",
   "company",
   "comrades",
   "contingent",
