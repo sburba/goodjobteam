@@ -17,6 +17,7 @@ export default [
   "great",
   "honorable",
   "magnificent",
+  "magical",
   "marvelous",
   "mind-blowing",
   "nice",
@@ -28,6 +29,7 @@ export default [
   "reasonable",
   "satisfying",
   "shipshape",
+  "sick",
   "sound",
   "spanking",
   "splendid",
@@ -38,6 +40,7 @@ export default [
   "superior",
   "tip-top",
   "valuable",
+  "wicked",
   "wonderful",
   "wonderous",
   "worthy"
