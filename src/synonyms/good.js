@@ -26,7 +26,6 @@ export default [
   "positive",
   "prime",
   "rad",
-  "reasonable",
   "satisfying",
   "shipshape",
   "sick",
