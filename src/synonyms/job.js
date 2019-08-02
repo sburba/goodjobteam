@@ -11,7 +11,6 @@ export default [
   "grind",
   "handiwork",
   "job",
-  "muscle",
   "operation",
   "output",
   "performance",
