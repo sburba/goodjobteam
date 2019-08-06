@@ -21,7 +21,7 @@
     "since 2017-06"
   ],
   "devDependencies": {
-    "start-server-and-test": "^1.9.1",
+    "start-server-and-test": "^1.9.2",
     "cypress": "^3.4.1",
     "prettier": "^1.18.2"
   }
