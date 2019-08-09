@@ -15,6 +15,22 @@ body {
 }
 
 #motivational-sentence {
+  font-size: 1vw;
+}
+
+@media screen and (min-width: 320px) {
+  #motivational-sentence {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #motivational-sentence {
+    font-size: calc(20px + 1vw);
+  }
+}
+
+#motivational-sentence {
   margin: 0;
   position: absolute;
   width: 80vw;
@@ -22,7 +38,6 @@ body {
   text-align: center;
   text-shadow: 0 1px 0.25ex rgba(0, 0, 0, 0.3);
   color: white;
-  font-size: calc(20px + 1vw);
   line-height: calc(1.7em + 0.5vw);
 }
 
@@ -114,7 +129,7 @@ body {
   margin: 0 0.5em;
 }
 
-#new-sentence {
+.text-button {
   background: none;
   color: white;
   border: none;
@@ -122,6 +137,10 @@ body {
   font: inherit;
   cursor: pointer;
   text-decoration: underline;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 html {

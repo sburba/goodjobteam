@@ -9,7 +9,7 @@
     "only-test": "cypress open",
     "test": "start-server-and-test only-start http://localhost:1234 only-test",
     "ci-test": "cypress run --record",
-    "ci":  "start-server-and-test only-start http://localhost:1234 ci-test",
+    "ci": "start-server-and-test only-start http://localhost:1234 ci-test",
     "checkstyle": "prettier --check src/**/*.js index.html",
     "now-build": "yarn run build"
   },
@@ -21,8 +21,13 @@
     "since 2017-06"
   ],
   "devDependencies": {
-    "start-server-and-test": "^1.9.2",
     "cypress": "^3.4.1",
-    "prettier": "^1.18.2"
+    "parcel-plugin-sw-cache": "^0.3.1",
+    "prettier": "^1.18.2",
+    "start-server-and-test": "^1.9.2"
+  },
+  "cache": {
+    "inDev": true,
+    "swDest": "sw.js"
   }
 }
