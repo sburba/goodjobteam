@@ -10,7 +10,10 @@
     <title>Good Job Team!</title>
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta name="description" content="The congratulations we rightly deserve" />
-    <link rel="shortcut icon" href="static/favicon.png" />
+    <meta name="theme-color" content="#2a3340" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="shortcut icon" href="/static/favicon.png" />
+    <link rel="apple-touch-icon" href="/static/party-icon-apple-touch.png" />
     <script src="src/index.js" defer></script>
   </head>
   <body>
@@ -28,8 +31,17 @@
     </div>
     <img src="./static/yoshiba.png" id="yoshiba" alt="Matt's Dog" />
     <div id="link-list">
-      <button id="new-sentence">another</button>
-      <a id="about" href="https://github.com/sburba/goodjobteam">about</a>
+      <button class="text-button hidden" id="add-to-homescreen">
+        add to homescreen
+      </button>
+      <button class="text-button" id="new-sentence">another</button>
+      <a
+        id="about"
+        target="_blank"
+        rel="noopener"
+        href="https://github.com/sburba/goodjobteam"
+        >about</a
+      >
     </div>
   </body>
 </html>

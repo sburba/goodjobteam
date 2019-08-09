@@ -1,0 +1,21 @@
+{
+  "short_name": "gooodjob",
+  "name": "Good job, team!",
+  "icons": [
+    {
+      "src": "/static/party-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/party-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#2a3340",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#2a3340"
+}
