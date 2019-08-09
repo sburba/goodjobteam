@@ -42,11 +42,4 @@ context("Actions", () => {
 
     cy.get("#sentence-icon").should("have.class", "konami");
   });
-
-  it("Is always in Konami mode on april first", () => {
-    cy.clock(new Date('April 1, 1970 00:00:00').getTime());
-    cy.visit("/");
-
-    cy.get("#sentence-icon").should("have.class", "konami");
-  });
 });
