@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Varela+Round");
-
 body {
   background: #2a3340;
   border: 0;
   margin: 0;
-  font-family: "Varela Round", sans-serif;
+  font-family: -apple-system-headline, -apple-system, "Helvetica Neue",
+    "Helvetica", "Roboto", sans-serif;
 }
 
 #container {
