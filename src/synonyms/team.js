@@ -1,11 +1,14 @@
 export default [
   "agents",
   "assemblage",
+  "alliance",
+  "baby",
   "band",
   "brigade",
   "clan",
   "class",
   "club",
+  "codeketeers",
   "collective",
   "consortium",
   "company",
@@ -16,12 +19,15 @@ export default [
   "everyone",
   "faction",
   "folks",
+  "frienderoonis",
   "gang",
   "heroes",
+  "my dears",
   "nerds",
   "outfit",
   "partners",
   "party",
+  "peasants",
   "posse",
   "squad",
   "team",
@@ -29,5 +35,6 @@ export default [
   "troupe",
   "unit",
   "workers",
-  "y’all"
+  "y’all",
+  "you nasty lads"
 ];
