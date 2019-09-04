@@ -1,4 +1,5 @@
 export default [
+  "agents",
   "assemblage",
   "band",
   "brigade",
@@ -16,6 +17,8 @@ export default [
   "faction",
   "folks",
   "gang",
+  "heroes",
+  "nerds",
   "outfit",
   "partners",
   "party",
