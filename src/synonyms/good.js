@@ -70,7 +70,7 @@ export default [
   "trendy",
   "valuable",
   "wicked",
-  "winner"
+  "winner",
   "witty",
   "wonderful",
   "wonderous",
