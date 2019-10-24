@@ -21,7 +21,7 @@
     "since 2017-06"
   ],
   "devDependencies": {
-    "cypress": "^3.4.1",
+    "cypress": "^3.5.0",
     "parcel-plugin-sw-cache": "^0.3.1",
     "prettier": "^1.18.2",
     "start-server-and-test": "^1.10.6"
