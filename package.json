@@ -15,10 +15,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.1.4"
   },
   "browserslist": [
-    "since 2017-06"
+    "last 2 versions"
   ],
   "devDependencies": {
     "cypress": "^3.5.0",
