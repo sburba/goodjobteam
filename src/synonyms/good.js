@@ -73,6 +73,6 @@ export default [
   "winner",
   "witty",
   "wonderful",
-  "wonderous",
+  "wondrous",
   "worthy"
 ];
