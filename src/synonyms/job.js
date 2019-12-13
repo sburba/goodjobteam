@@ -16,7 +16,7 @@ export default [
   "handiwork",
   "happenings",
   "job",
-  "jorrrb",
+  "jorb",
   "mission",
   "muscle",
   "operation",
