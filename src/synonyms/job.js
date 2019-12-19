@@ -1,6 +1,7 @@
 export default [
   "accomplishment",
   "achievement",
+  "activity",
   "completion",
   "creation",
   "deeds",
@@ -22,6 +23,7 @@ export default [
   "operation",
   "output",
   "performance",
+  "profession",
   "production",
   "project",
   "pursuit",
@@ -29,6 +31,7 @@ export default [
   "stint",
   "strive",
   "toil",
+  "trade",
   "travail",
   "trial",
   "triumph",
