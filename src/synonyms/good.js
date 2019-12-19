@@ -1,5 +1,6 @@
 export default [
   "ace",
+  "adept",
   "admirable",
   "bangin'",
   "capital",
@@ -12,6 +13,7 @@ export default [
   "deluxe",
   "devastating",
   "devilish",
+  "distinguished",
   "equitable",
   "excellent",
   "exceptional",
