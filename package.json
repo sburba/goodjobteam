@@ -1,6 +1,9 @@
 {
   "name": "goodjobteam",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "start": "parcel index.html --open",
     "only-start": "parcel index.html",
