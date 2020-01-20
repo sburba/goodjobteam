@@ -36,6 +36,7 @@ export default [
   "meritorious",
   "mind-blowing",
   "nice",
+  "noble",
   "outstanding",
   "phat",
   "pithy",
