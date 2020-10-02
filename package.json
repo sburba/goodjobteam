@@ -27,7 +27,7 @@
     "cypress": "^5.4.0",
     "parcel-plugin-sw-cache": "^0.3.1",
     "prettier": "^1.19.1",
-    "start-server-and-test": "^1.11.4"
+    "start-server-and-test": "^1.11.5"
   },
   "cache": {
     "inDev": true,
