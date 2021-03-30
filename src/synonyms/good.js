@@ -77,5 +77,5 @@ export default [
   "witty",
   "wonderful",
   "wondrous",
-  "worthy"
+  "worthy",
 ];

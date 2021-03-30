@@ -39,5 +39,5 @@ export default [
   "unit",
   "workers",
   "y’all",
-  "you nasty lads"
+  "you nasty lads",
 ];
