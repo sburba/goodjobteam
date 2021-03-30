@@ -37,5 +37,5 @@ export default [
   "triumph",
   "undertaking",
   "venture",
-  "work"
+  "work",
 ];
