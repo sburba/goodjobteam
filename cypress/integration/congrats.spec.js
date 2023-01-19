@@ -4,6 +4,11 @@ context("Actions", () => {
     cy.get("#container").contains(/\w+ \w+,.+\w+!/ms);
   });
 
+  it('Should support the "go" variant', () => {
+    cy.visit("/?variant=go");
+    cy.get("#container").contains(/\w+ \w+!/ms);
+  });
+
   it('Gives a new sentence when "another?" is clicked', () => {
     cy.visit("/");
     cy.get('#container').then(($container) => {
@@ -17,8 +22,8 @@ context("Actions", () => {
         expect(secondSentence).to.match(/\w+ \w+,.+\w+!/ms);
 
         expect(firstSentence).not.to.equal(secondSentence);
-      })
-    })
+      });
+    });
   });
 
   it("Turns to dogs when the Konami code is entered", () => {

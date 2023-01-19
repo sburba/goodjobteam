@@ -1,7 +1,10 @@
+import goSynonyms from "./synonyms/go.js";
 import goodSynonyms from "./synonyms/good.js";
 import workSynonyms from "./synonyms/job.js";
 import teamSynonyms from "./synonyms/team.js";
 import randomFactory from "./random.js";
+
+const variant = new URLSearchParams(window.location.search).get('variant');
 
 async function displayConfetti() {
   const module = await import("./confetti.js");
@@ -31,12 +34,18 @@ function activateYoshiMode() {
   window.konamiActivated = true;
 }
 
-function showNewSentenceWith(random) {
+function showNewSentenceWith(random, variant) {
   const choose = chooseWith.bind(undefined, random);
-
-  const sentenceTop = `${capitalizeFirstLetter(choose(goodSynonyms))} ${choose(
-    workSynonyms
-  )}, `;
+  let sentenceTop;
+  switch (variant?.toUpperCase()) {
+    case "GO":
+      sentenceTop = `${capitalizeFirstLetter(choose(goSynonyms))} `;
+      break;
+    default:
+      sentenceTop = `${capitalizeFirstLetter(choose(goodSynonyms))} ${choose(
+        workSynonyms
+      )}, `;
+  }
   const sentenceBottom = `${choose(teamSynonyms)}!`;
 
   document.title = sentenceTop + sentenceBottom;
@@ -54,10 +63,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     `${today.getFullYear()}${today.getMonth()}${today.getDate()}`
   );
 
-  showNewSentenceWith(random);
+  showNewSentenceWith(random, variant);
 
   document.getElementById("new-sentence").onclick = () => {
-    showNewSentenceWith(Math.random);
+    showNewSentenceWith(Math.random, variant);
   };
 
   await displayConfetti();
